@@ -1,6 +1,7 @@
 # trainologic_exam
- 
- 
- npm install
+ Practical React 1 Exam
+ for Trainologic.
 
- npm start
+
+ Clone this repository >  npm install > npm start
+ 
