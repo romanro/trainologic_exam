@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import List from'./List.js';
 import Contact from'./Contact.js';
+import './styles/group.css'
 
-const STYLES = {
-    contacts: {
-        cursor: 'pointer',
-        color: 'red'
-    }
-}
+
 class Group extends Component {
   constructor(opts) {
       super(opts)
@@ -26,7 +22,9 @@ class Group extends Component {
     const { showContacts } = this.state;
     return (
       <div>
-        <div onClick={this.handleClick.bind(this)} style={STYLES.contacts} ><Contact item={group} /></div>
+        <div className='group-header' onClick={this.handleClick.bind(this)} >
+            <Contact item={group} />
+        </div>
         {showContacts ? <List items={group.contacts} /> : null}
       </div>
     );

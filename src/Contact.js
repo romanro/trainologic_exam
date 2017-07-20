@@ -1,6 +1,8 @@
 import React from 'react';
-import './styles/Contact.css';
+import './styles/contact.css';
+
+/// STATELESS Single Contact
 
 export default function (props) {
-    return <div className='Contact-main'>{props.item.name}</div>
+    return <div className='contact'>{props.item.name}</div>
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Contact from './Contact';
 import Group from './Group';
+import './styles/list.css'
 
 const renderSingle = function (item, index) {
     if (item.type === "Group"){
@@ -15,7 +16,7 @@ class List extends Component {
     const nodes = items.map(renderSingle)
 
     return (
-      <div>
+      <div className='list'>
         {nodes}
       </div>
     );

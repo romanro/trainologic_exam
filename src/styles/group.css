@@ -1,0 +1,7 @@
+.group-header {
+    cursor: pointer;
+}
+
+.group-header:hover {
+    background: #add8e6;
+}
